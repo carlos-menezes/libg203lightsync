@@ -10,5 +10,6 @@ A library for programmatically interacting with the Logitech G203 Lightsync mous
 4. `cmake ..`
 5. `cmake --build .`
 
+
 ## Examples
 Check the [examples](/examples) folder for example usage of the library.
