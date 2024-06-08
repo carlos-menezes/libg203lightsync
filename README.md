@@ -4,7 +4,7 @@ A library for programmatically interacting with the Logitech G203 Lightsync mous
 
 ## Building
 
-1. `git clone --recurse-submodules htts://github.com/carlos-menezes/libg203lightsync.git`
+1. `git clone --recurse-submodules https://github.com/carlos-menezes/libg203lightsync.git`
 2. `cd libg203lightsync`
 3. `mkdir build && cdbuild`
 4. `cmake ..`
