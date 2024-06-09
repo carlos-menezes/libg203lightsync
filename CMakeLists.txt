@@ -34,3 +34,14 @@ target_link_libraries(libg203lightsync
 target_link_libraries(libg203lightsync_static
         usb-1.0
 )
+
+
+# Optionally compile `examples`
+add_executable(set_solid_color examples/set_solid_color.cpp)
+set_target_properties(set_solid_color PROPERTIES EXCLUDE_FROM_ALL true)
+target_link_libraries(set_solid_color libg203lightsync)
+
+add_executable(google examples/google.cpp)
+set_target_properties(google PROPERTIES EXCLUDE_FROM_ALL true)
+target_link_libraries(google libg203lightsync)
+

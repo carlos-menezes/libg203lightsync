@@ -199,12 +199,10 @@ void g203_lightsync::send_command(const std::array<const uint8_t, 20> &data, con
 }
 
 uint16_t g203_lightsync::validate_rate(const uint16_t &rate) {
-    //return rate;
     return std::max(static_cast<uint16_t>(1000), std::min(std::numeric_limits<uint16_t>::max(), rate));
 }
 
 uint8_t g203_lightsync::validate_brightness(const uint8_t &brightness) {
-    //return brightness;
     return std::max(static_cast<uint8_t>(1), std::min(static_cast<uint8_t>(100), brightness));
 }
 
