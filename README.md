@@ -15,5 +15,5 @@ A library for programmatically interacting with the Logitech G203 Lightsync mous
 Check the [examples](/examples) folder for example usage of the library.  The examples are excluded from the `ALL` target, thus, in order to build them, you must target them explicitly, e.g.:
 
 ```shell
-cmake --build . --target=set_solid_color
+cmake --build . --target set_solid_color google
 ```
