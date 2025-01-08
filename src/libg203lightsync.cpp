@@ -130,7 +130,7 @@ void g203_lightsync::set_blend(const uint16_t rate, const uint8_t brightness) {
     return this->send_command(buffer, true);
 }
 
-void g203_lightsync::send_command(const std::array<const uint8_t, 20> &data, const boolean disable_onboard_memory) {
+void g203_lightsync::send_command(const std::array<const uint8_t, 20> &data, const bool disable_onboard_memory) {
     // PROLOGUE
     this->libusb_call_status = libusb_claim_interface(this->device_handle, 0x01);
     if (this->libusb_call_status < 0) {
