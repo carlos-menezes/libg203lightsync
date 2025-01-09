@@ -15,7 +15,7 @@ class g203_lightsync {
     int libusb_call_status;
     unsigned int libusb_timeout;
 
-    void send_command(const std::array<const uint8_t, 20> &data, boolean disable_onboard_memory = true);
+    void send_command(const std::array<const uint8_t, 20> &data, bool disable_onboard_memory = true);
     static uint16_t validate_rate(const uint16_t &rate);
     static uint8_t validate_brightness(const uint8_t &brightness);
 
